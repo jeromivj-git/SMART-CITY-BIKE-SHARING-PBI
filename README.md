@@ -1,68 +1,96 @@
-🚲 Smart City Bike Sharing Analysis
-📌 Project Overview
+# 🚲 Smart City Bike Sharing Analysis
 
-This project analyzes a smart city bike-sharing dataset containing station-level information such as location, capacity, availability, and operational status. The data enables monitoring of bike supply and demand, supporting operational efficiency, reporting, and decision-making for urban mobility systems.
+## 📌 Project Overview
+This project analyzes a smart city bike-sharing dataset containing station-level information such as location, capacity, availability, and operational status. The goal is to monitor bike supply and demand, enabling better operational efficiency and decision-making.
 
-🎯 Project Objectives
-Analyze station capacity and bike availability across different contracts
-Identify underutilized and overutilized stations
-Enable data-driven decision-making for rebalancing bikes
-Build interactive dashboards for monitoring system performance
-Support predictive analysis for future demand trends
-📂 Data Source
+---
 
-The dataset consists of bike-sharing station data including:
+## 🎯 Project Objectives
+- Analyze station capacity and bike availability across contracts  
+- Identify underutilized and overutilized stations  
+- Support data-driven bike rebalancing decisions  
+- Build interactive dashboards for performance monitoring  
+- Enable predictive insights for demand trends  
 
-Station details (name, address, contract city)
-Geographic coordinates (latitude, longitude)
-Availability metrics (bikes and stands)
-Operational status (OPEN/CLOSED)
-Timestamp of last update
-🛠️ Tools & Technologies
-Microsoft Excel – Data loading and initial inspection
-Power Query – Data cleaning and transformation
-Power BI – Data modeling, DAX calculations, and dashboards
-🧹 Data Pre-Processing
-Converted data types (boolean, integer, datetime)
-Split position field into latitude and longitude
-Handled missing values and validated numeric fields
-Standardized text fields (OPEN/CLOSED, trimmed spaces)
-Created calculated columns (occupancy rate, availability rate)
-Removed duplicate records using latest timestamp
-🧩 Data Modeling
-Designed a Star Schema model
-Central fact table: Fact_Bike_Status
-Dimension tables: Dim_Station, Dim_Contract, Dim_Date, Dim_Status
-Established relationships using primary and foreign keys
-Optimized for efficient querying and reporting
-🔍 Exploratory Data Analysis (EDA)
-Analyzed distribution of stations across contracts
-Evaluated bike and stand availability trends
-Compared operational status across stations
-Identified top and bottom performing stations
-Explored geographic patterns using location data
-📊 Key Visualizations
-KPI cards (Total Stations, Bikes Available, Utilization %)
-Bar charts for contract-level comparison
-Line charts for time-based trends
-Maps for geographic distribution of stations
-Ranking visuals for station performance
-💡 Key Insights
-Certain stations frequently experience low bike availability
-High-demand areas show imbalance in bike distribution
-Some stations remain underutilized despite high capacity
-Availability patterns vary significantly across contracts
-Operational status impacts overall system performance
-✅ Recommendations
-Implement bike rebalancing strategies across stations
-Introduce automated alerts for empty or full stations
-Prioritize maintenance for frequently closed stations
-Optimize station capacity based on demand trends
-Monitor KPIs through real-time dashboards
-▶️ How to Use
-Load the dataset into Excel or Power BI
-Apply data cleaning steps using Power Query
-Build the data model with fact and dimension tables
-Create DAX measures for KPIs and analysis
-Develop dashboards to visualize insights
-Use insights for operational and strategic decision-making
+---
+
+## 📂 Data Source
+The dataset includes:
+- Station details (name, address, contract city)  
+- Geographic coordinates (latitude, longitude)  
+- Availability metrics (bikes and stands)  
+- Operational status (OPEN/CLOSED)  
+- Timestamp of last update  
+
+---
+
+## 🛠️ Tools & Technologies
+- Microsoft Excel – Data loading  
+- Power Query – Data cleaning and transformation  
+- Power BI – Data modeling, DAX, and visualization  
+
+---
+
+## 🧹 Data Pre-Processing
+- Converted data types (boolean, integer, datetime)  
+- Split position into latitude and longitude  
+- Handled missing values and validated data  
+- Standardized text fields (OPEN/CLOSED)  
+- Created calculated columns (occupancy & availability rate)  
+- Removed duplicates using latest timestamp  
+
+---
+
+## 🧩 Data Modeling
+- Implemented Star Schema  
+- Fact Table: Fact_Bike_Status  
+- Dimension Tables: Dim_Station, Dim_Contract, Dim_Date, Dim_Status  
+- Established relationships using primary and foreign keys  
+
+---
+
+## 🔍 Exploratory Data Analysis
+- Distribution of stations across contracts  
+- Bike and stand availability trends  
+- Operational status comparison  
+- Identification of top/bottom stations  
+- Geographic analysis using map visuals  
+
+---
+
+## 📊 Key Visualizations
+- KPI Cards (Total Stations, Availability %)  
+- Bar Charts (Contract comparison)  
+- Line Charts (Trend analysis)  
+- Maps (Station locations)  
+- Ranking visuals (Top/Bottom stations)  
+
+---
+
+## 💡 Key Insights
+- Some stations frequently run out of bikes  
+- High-demand areas show imbalance in distribution  
+- Certain stations are underutilized  
+- Availability varies across contracts  
+- Operational status impacts performance  
+
+---
+
+## ✅ Recommendations
+- Implement bike rebalancing strategies  
+- Set alerts for empty/full stations  
+- Prioritize maintenance for closed stations  
+- Optimize station capacity based on demand  
+- Monitor KPIs using dashboards  
+
+---
+
+## ▶️ How to Use
+1. Load dataset into Excel or Power BI  
+2. Clean data using Power Query  
+3. Build data model (fact & dimension tables)  
+4. Create DAX measures  
+5. Develop dashboards  
+6. Analyze insights for decision-making  
+
+---
